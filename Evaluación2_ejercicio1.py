@@ -25,16 +25,16 @@ while True:
     
 #Validación de descuentos por edad
     if edad <= 30:
-        if tramo == "A" and tramo == "B":
+        if tramo == "A" or tramo == "B":
             descuento_medicamentos = 0.18
             descuento_tramo = 0.1
-        elif tramo == "C" and tramo == "D":
+        elif tramo == "C" or tramo == "D":
             descuento_medicamentos = 0.12
     elif edad >= 31 and edad <=60:
-        if tramo == "A" and tramo == "B":
+        if tramo == "A" or tramo == "B":
             descuento_medicamentos = 0.12
             descuento_tramo = 0.1
-        elif tramo == "C" and tramo == "D":
+        elif tramo == "C" or tramo == "D":
             descuento_medicamentos = 0.08
     elif edad > 60:
         print("No se aplican descuentos por edad para personas mayores de 60 años")
